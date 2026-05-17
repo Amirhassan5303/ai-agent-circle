@@ -1,4 +1,4 @@
-import 'dotenv/config'; 
+import "dotenv/config";
 import { initiateDeveloperControlledWalletsClient } from "@circle-fin/developer-controlled-wallets";
 import { keccak256, toHex } from "viem";
 
@@ -6,13 +6,13 @@ const REPUTATION_REGISTRY = "0x8004B663056A597Dffe9eCcC1965A193B7388713";
 
 const tag = "successful_trade";
 const feedbackHash = keccak256(toHex(tag));
-const validatorWallet = process.env.VALIDATOR_WALLET
-const agentId = process.env.AGENT_ID
+const validatorWallet = process.env.VALIDATOR_WALLET;
+const agentId = process.env.AGENT_ID;
 
 const circleClient = initiateDeveloperControlledWalletsClient({
   apiKey: process.env.CIRCLE_API_KEY!,
   entitySecret: process.env.CIRCLE_ENTITY_SECRET!,
-}); 
+});
 
 const reputationTx = await circleClient.createContractExecutionTransaction({
   walletAddress: validatorWallet!,
