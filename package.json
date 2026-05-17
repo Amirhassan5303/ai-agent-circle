@@ -1,0 +1,24 @@
+{
+  "name": "ai-agent-circle",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsx --env-file=.env index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "@circle-fin/developer-controlled-wallets": "^10.2.0",
+    "dotenv": "^17.4.1",
+    "viem": "^2.47.11"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.2",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2"
+  }
+}

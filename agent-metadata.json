@@ -1,0 +1,12 @@
+{
+  "name": "0xdegen DeFi Arbitrage Agent v1.0",
+  "description": "Autonomous trading agent for cross-DEX arbitrage on Arc",
+  "image": "ipfs://bafkreiecsvkwg3u3ky5uq54zh3ts3iinuktcqf3kwqz2nkpzynepjfhrf4",
+  "agent_type": ["trading", "assistant"],
+  "capabilities": [
+    "arbitrage_detection",
+    "liquidity_monitoring",
+    "automated_execution"
+  ],
+  "version": "1.0.0"
+}
